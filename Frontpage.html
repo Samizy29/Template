@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LDS Gathering Attendance</title>
+  <link rel="stylesheet" href="style/frontpage.css">
+</head>
+<body>
+  <header>
+    <h1>The Church of Jesus Christ of Latter-day Saints</h1>
+    <p class="subtitle">Gathering Attendance</p>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Member Check-in</h2>
+      <form id="attendanceForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+
+        <label for="unit">Ward/Branch</label>
+        <input type="text" id="unit" placeholder="Enter your ward or branch" required>
+
+        <label for="status">Attendance Status</label>
+        <select id="status" required>
+          <option value="">-- Select --</option>
+          <option value="Present">Present</option>
+          <option value="Absent">Absent</option>
+        </select>
+
+        <button type="submit">Check In</button>
+      </form>
+    </div>
+
+    <div id="confirmation" class="hidden">
+      <h2>✅ Thank you!</h2>
+      <p>Your attendance has been recorded.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> The Church of Jesus Christ of Latter-day Saints</p>
+  </footer>
+
+  <script src="script/frontpage.js"></script>
+</body>
+</html>
